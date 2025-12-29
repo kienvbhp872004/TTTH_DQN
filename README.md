@@ -4,8 +4,8 @@
 ## 📦 Clone dự án
 
 ```bash
-git clone https://github.com/yourusername/robot-qlearning.git
-cd robot-qlearning
+git clone https://github.com/jien0404/TTTH_DQN.git
+cd TTTH_DQN
 ```
 ## Tạo môi trường ảo
 ```
