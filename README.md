@@ -179,6 +179,39 @@ Các ảnh tổng hợp và biểu đồ đã được xuất ra trong:
 - `result_visualized/`
 - `metrics/`
 
+## Trực Quan Kết Quả Đường Đi
+
+Để nhìn rõ hơn chất lượng quỹ đạo, repo đã lưu sẵn các ảnh trực quan hóa đường đi trên từng map. Mỗi map thường có 4 phiên bản:
+
+- `best`: đường đi đại diện tốt nhất
+- `success`: tỷ lệ thành công
+- `length`: ưu tiên đường đi ngắn
+- `angle`: ưu tiên đường đi mượt, ít góc ngoặt
+
+### `uniform1`
+
+![uniform1 best](result_visualized/uniform1/best_paths_uniform1_best_20251219_232255.png)
+
+### `diverse1`
+
+![diverse1 best](result_visualized/diverse1/best_paths_diverse1_best_20251219_232311.png)
+
+### `complex1`
+
+![complex1 best](result_visualized/complex1/best_paths_complex1_best_20251219_232320.png)
+
+Nhìn tổng thể từ các ảnh này:
+
+- đường đi trên `uniform1` khá gọn và ít vòng lặp
+- `diverse1` cho thấy sự khác biệt rõ giữa các controller do vật cản đa dạng hơn
+- `complex1` thể hiện bài toán khó hơn, đường đi dễ bị bẻ hướng nhiều và cần controller ổn định hơn
+
+Nếu muốn xem thêm các góc nhìn khác của cùng một map, hãy mở các file cùng tiền tố:
+
+- `best_paths_<map>_success_*.png`
+- `best_paths_<map>_length_*.png`
+- `best_paths_<map>_angle_*.png`
+
 ## Hướng Dẫn Cài Đặt
 
 ### 1. Clone project
